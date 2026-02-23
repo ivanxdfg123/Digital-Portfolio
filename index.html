@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jovan Abueva — Junior Developer Portfolio. Building modern web experiences with clean code and thoughtful design." />
+  <meta name="author" content="Jovan Abueva" />
+  <meta name="theme-color" content="#080810" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jovan Abueva — Junior Developer" />
+  <meta property="og:description" content="Building modern web experiences with clean code and thoughtful design." />
+  <meta property="og:type" content="website" />
+
+  <title>Jovan Abueva — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================================
+       NAVIGATION
+  =================================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo">
+      <span class="logo-dot" aria-hidden="true"></span>
+      Jovan Abueva
+    </a>
+
+    <ul class="nav-menu" role="list">
+      <li><a href="#home"           class="nav-link">Home</a></li>
+      <li><a href="#about"          class="nav-link">About Me</a></li>
+      <li><a href="#skills"         class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#projects"       class="nav-link">Projects</a></li>
+      <li>
+        <a href="/cdn-cgi/l/email-protection#8eefecfbebf8efe4bebdcee9e3efe7e2a0ede1e3" class="nav-cta" aria-label="Contact me via email">
+          Contact Me
+        </a>
+      </li>
+    </ul>
+
+    <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="#home"           class="nav-link">Home</a>
+    <a href="#about"          class="nav-link">About Me</a>
+    <a href="#skills"         class="nav-link">Skills</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#projects"       class="nav-link">Projects</a>
+    <a href="/cdn-cgi/l/email-protection#f293908797849398c2c1b2959f939b9edc919d9f" class="btn-primary" style="margin-top:1rem">Contact Me</a>
+  </div>
+
+
+  <!-- ===================================
+       HERO
+  =================================== -->
+  <section id="home" aria-label="Introduction">
+    <!-- Background effects -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Available for opportunities</p>
+
+        <h1 class="hero-name">
+          Jovan
+          <span>Abueva</span>
+        </h1>
+
+        <p class="hero-tagline">
+          <strong class="hero-typing">Junior Developer</strong>
+          <br />
+          Crafting fast, accessible, and beautiful digital experiences
+          that make a real difference.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+            View My Work
+          </a>
+          <a href="assets/files/ABUEVA_Resume_OJT.pdf" download="ABUEVA_Resume_OJT.pdf" class="btn-secondary" aria-label="Download Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ===================================
+       ABOUT ME
+  =================================== -->
+  <section id="about" aria-label="About Me">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Photo Column -->
+        <div class="about-image-wrap reveal">
+          <div class="photo-placeholder" role="img" aria-label="Jovan Abueva profile photo">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Jovan Abueva"
+              class="profile-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback shown only if image fails to load -->
+            <div style="display:none; flex-direction:column; align-items:center; gap:0.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span>Add your photo to assets/images/</span>
+            </div>
+          </div>
+          <div class="about-frame" aria-hidden="true"></div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-text">
+          <header class="about-header reveal reveal-delay-1">
+            <p class="section-label">About Me</p>
+            <h2 class="section-title">Turning ideas into<br/>elegant solutions</h2>
+          </header>
+
+          <div class="about-bio reveal reveal-delay-2">
+            <p>
+              Hi! I'm <strong>Jovan Abueva</strong>, a passionate Junior Developer based in Davao City, I specialize in building performant web applications with a keen eye for design and an obsession with clean, maintainable code.
+            </p>
+          </div>
+
+          <!-- Info List -->
+          <ul class="about-info-list reveal reveal-delay-4">
+            <li class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Davao City, Philippines</span>
+            </li>
+            <li class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cfdfee9f9eafdf6acafdcfbf1fdf5f0b2fff3f1">[email&#160;protected]</a></span>
+            </li>
+            <li class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Open to Remote &amp; Hybrid Setup</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ===================================
+       SKILLS
+  =================================== -->
+  <section id="skills" aria-label="Skills">
+    <div class="container">
+
+      <header class="skills-header reveal">
+        <p class="section-label">Skills &amp; Tools</p>
+        <h2 class="section-title">Technologies I work with</h2>
+        <p class="section-subtitle">
+          A curated set of languages, frameworks, and tools I use to build modern digital products.
+        </p>
+      </header>
+
+      <div class="skills-grid-v2" role="list" aria-label="Technology skills">
+
+        <!-- Backend -->
+        <div class="skill-cat-card reveal" role="listitem">
+          <div class="skill-cat-icon yellow">💻</div>
+          <p class="skill-cat-title">Backend Development</p>
+          <ul class="skill-cat-list yellow">
+            <li>.NET Stack: C#, VB.Net, ASP.NET</li>
+            <li>PHP: Laravel</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-cat-card reveal reveal-delay-1" role="listitem">
+          <div class="skill-cat-icon pink">🗄️</div>
+          <p class="skill-cat-title">Database Management</p>
+          <ul class="skill-cat-list pink">
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>SQL Server</li>
+            <li>Entity Relationship Database</li>
+          </ul>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-cat-card reveal reveal-delay-2" role="listitem">
+          <div class="skill-cat-icon blue">🎨</div>
+          <p class="skill-cat-title">Frontend Development</p>
+          <ul class="skill-cat-list blue">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-cat-card reveal reveal-delay-3" role="listitem">
+          <div class="skill-cat-icon purple">⚙️</div>
+          <p class="skill-cat-title">Tools</p>
+          <ul class="skill-cat-list purple">
+            <li>Git, GitHub</li>
+            <li>Visual Studio &amp; Visual Studio Code</li>
+            <li>Postman</li>
+            <li>Lucidchart, Figma, Draw.io</li>
+            <li>XAMPP</li>
+          </ul>
+        </div>
+
+      </div>
+    </div> 
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ===================================
+       CERTIFICATIONS
+  =================================== -->
+  <section id="certifications" aria-label="Certifications">
+    <div class="container">
+
+      <header class="certs-header reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">
+          Industry-recognized certifications validating my technical expertise across multiple domains.
+          To verify, click the credential link on each certificate. You will need to input the Credential ID provided below each certificate"
+        </p>
+
+      </header>
+
+      <div class="certs-grid">
+
+        <!-- Cert 1 — Java -->
+        <article class="cert-card reveal" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-Java.png"
+              alt="IT Specialist - Java certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist Java certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-java" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — Java</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  December 2022
+                </span>
+                <span class="cert-id">Credential ID: saEN-XMzS</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 2 — Databases -->
+        <article class="cert-card reveal reveal-delay-1" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-Databases.png"
+              alt="IT Specialist - Databases certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist Databases certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-db" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — Databases</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  October 2023
+                </span>
+                <span class="cert-id">Credential ID: GbVF-4wUh</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 3 — HTML and CSS -->
+        <article class="cert-card reveal reveal-delay-2" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-HTML-and-CSS.png"
+              alt="IT Specialist - HTML and CSS certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist HTML and CSS certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-html" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — HTML and CSS</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  May 2024
+                </span>
+                <span class="cert-id">Credential ID: v79e-uTn8</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 4 — Networking -->
+        <article class="cert-card reveal reveal-delay-3" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-Networking.png"
+              alt="IT Specialist - Networking certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist Networking certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-net" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — Networking</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  December 2024
+                </span>
+                <span class="cert-id">Credential ID: UnQy-s4Ah</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 5 — Network Security -->
+        <article class="cert-card reveal" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-Network-Security.png"
+              alt="IT Specialist - Network Security certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist Network Security certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-netsec" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — Network Security</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  July 2025
+                </span>
+                <span class="cert-id">Credential ID: wMukm-H9FR</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cert 6 — Cyber Security -->
+        <article class="cert-card reveal reveal-delay-1" role="listitem">
+          <div class="cert-image-wrap">
+            <img
+              src="assets/images/docs/ITS-Cybersecurity.png"
+              alt="IT Specialist - Cyber Security certificate"
+              class="cert-img"
+              loading="lazy"
+            />
+            <div class="cert-overlay">
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-btn"
+                aria-label="Verify IT Specialist Cyber Security certificate"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                Verify
+              </a>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-badge cert-badge-cyber" aria-hidden="true">ITS</div>
+            <div class="cert-info">
+              <h3 class="cert-title">IT Specialist — Cyber Security</h3>
+              <p class="cert-issuer">Certiport, a Pearson VUE business</p>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  October 2025
+                </span>
+                <span class="cert-id">ID: wnuYd-48Go </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+
+  <!-- ===================================
+       PROJECTS
+  =================================== -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+
+      <header class="projects-header">
+        <div class="reveal">
+          <p class="section-label">Selected Work</p>
+          <h2 class="section-title">Projects I take part of</h2>
+        </div>
+        <p class="section-subtitle reveal reveal-delay-1">
+          A snapshot of recent builds — from concept to production.
+        </p>
+      </header>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 — Fleet Management -->
+        <article class="project-card reveal">
+          <div class="project-thumbnail" aria-hidden="true">
+            <img
+              src="assets/images/projects/fleet-management.png"
+              alt="Fleet Management System screenshot"
+              class="project-screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; this.nextElementSibling.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-thumbnail-bg" style="display:none; background: linear-gradient(135deg, #0f2942 0%, #1e3a5f 50%, #0f2942 100%)"></div>
+            <span class="project-number">01</span>
+            <div class="project-thumbnail-icon" style="display:none">🚛</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Fleet Management System</h3>
+            <p class="project-desc">
+              Built for <strong>ATC Merchandise and Trading Inc.</strong>, this web based system streamlines logistics operations through intelligent route optimization, comprehensive vehicle management, driver assignment tracking, and automated maintenance scheduling — paired with incident reporting to keep every trip safe and on record.
+            </p>
+            <div class="project-stack" aria-label="Technologies used">
+              <span class="stack-tag">Laravel</span>
+              <span class="stack-tag">Bootstrap</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">PHP</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ivanxdfg123/ATC_FLEET_MANAGEMENT" class="project-link" aria-label="View Fleet Management on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 — Event Management -->
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-thumbnail" aria-hidden="true">
+            <img
+              src="assets/images/projects/event-management.png"
+              alt="Event Management System screenshot"
+              class="project-screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; this.nextElementSibling.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-thumbnail-bg" style="display:none; background: linear-gradient(135deg, #1a0f2e 0%, #2d1b4e 50%, #1a0f2e 100%)"></div>
+            <span class="project-number">02</span>
+            <div class="project-thumbnail-icon" style="display:none">🎟️</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Event Management System</h3>
+            <p class="project-desc">
+              A full-featured event booking and management platform serving both attendees and administrators. Users can browse, register, and manage their event bookings, while admins have full control over event creation, capacity management, and attendee oversight — all through a clean, intuitive interface.
+            </p>
+            <div class="project-stack" aria-label="Technologies used">
+              <span class="stack-tag">ASP.net</span>
+              <span class="stack-tag">C#</span>
+              <span class="stack-tag">SQL SERVER</span>
+              <span class="stack-tag">Bootstrap</span>
+              <span class="stack-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Event Management on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 — POS & Inventory -->
+        <article class="project-card reveal reveal-delay-3">
+          <div class="project-thumbnail" aria-hidden="true">
+            <img
+              src="assets/images/projects/pos-inventory.png"
+              alt="Point of Sales and Inventory System screenshot"
+              class="project-screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block'; this.nextElementSibling.nextElementSibling.style.display='flex';"
+            />
+            <div class="project-thumbnail-bg" style="display:none; background: linear-gradient(135deg, #0f2920 0%, #1a4a32 50%, #0f2920 100%)"></div>
+            <span class="project-number">03</span>
+            <div class="project-thumbnail-icon" style="display:none">🏍️</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Point of Sales &amp; Inventory System</h3>
+            <p class="project-desc">
+              Developed for <strong>TAJ Motorshop</strong>, this local application system handles end-to-end sales transactions and stock management. It features real-time inventory tracking, sales reporting, and a streamlined checkout flow — helping the shop eliminate manual errors and keep operations running smoothly.
+            </p>
+            <div class="project-stack" aria-label="Technologies used">
+              <span class="stack-tag">VB.net</span>
+              <span class="stack-tag">C#</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">Crystal Reports</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ivanxdfg123/IT12_SYSTEM_TAJ" class="project-link" aria-label="View POS &amp; Inventory on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-logo">
+          Jovan<span>.</span>Abueva
+        </div>
+
+        <p class="footer-tagline">
+          Building thoughtful, performant web experiences — one line of code at a time.
+        </p>
+
+        <!-- Social Links -->
+        <nav class="social-links" aria-label="Social media links">
+          <!-- GitHub -->
+          <a href="https://github.com/ivanxdfg123" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/jovan-abueva-571807315/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect width="4" height="12" x="2" y="9"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/bibok.abueva" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <!-- Email -->
+          <a href="/cdn-cgi/l/email-protection#117073647467707b212251767c70787d3f727e7c" class="social-link" aria-label="Send email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#projects">Projects</a>
+        </nav>
+
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Jovan Abueva. Built with <span>♥</span> and clean code.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
